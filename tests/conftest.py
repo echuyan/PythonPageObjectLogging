@@ -38,9 +38,11 @@ def browser(request):
         binary_yandex_driver_file = '../drivers/yandexdriver.exe'
         driver = webdriver.Chrome(binary_yandex_driver_file, options=options)
     driver.maximize_window()
-    driver.base_opencart_url = base_opencart_url
-    yield driver
-    driver.close()
+    #driver.base_opencart_url = base_opencart_url
+    driver.get(base_opencart_url)
+    # yield driver
+    # driver.close()
+    return driver
 
 
 

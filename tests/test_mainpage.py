@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.main_page import MainPage
+from pages.item_card_page import ItemCardPage
+
 # from page_objects.user_page import UserPage
 # from page_objects.product_page import ProductPage
 # from page_objects.cart_page import CartPage
@@ -29,10 +31,7 @@ def test_check_title(browser):
     """
       Test is designed to check the title of the Main Page
     """
-    browser.get(browser.base_opencart_url)
-    wait = WebDriverWait(browser, 5, poll_frequency=1)
-    wait.until(EC.title_is("Your Store"))
-    assert EC.title_is("Your Store")
+    MainPage(browser).wait_title_load("Your Store")
 
 
 def test_check_featured(browser):
@@ -41,17 +40,13 @@ def test_check_featured(browser):
         Test id designed in a way to avoid StaleElementReferenceException
         Within the for loop the test opens each featured item card and checks its title
     """
-    browser.get(browser.base_opencart_url)
-    wait = WebDriverWait(browser, 5)
-    featured_elements = wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "product-thumb")))
-    img_elements = browser.find_elements(By.XPATH, ("//div[@class='product-thumb']/div/a/img"))
-    titles = [item.get_attribute("title") for item in img_elements]
+    featured_elements = MainPage(browser).get_featured_elements()
+    titles = MainPage(browser).get_img_titles()
 
     for i in range(len(featured_elements)):
-        featured_elements = wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "product-thumb")))
-        featured_elements[i].click()
-        wait.until(EC.visibility_of_element_located((By.ID, "product-info")))
-        assert EC.title_is(titles[i])
+        MainPage(browser).click_featured_product(i)
+        ItemCardPage(browser).wait_page_load()
+        ItemCardPage(browser).wait_title_load(titles[i])
         browser.back()
         i += 1
 
