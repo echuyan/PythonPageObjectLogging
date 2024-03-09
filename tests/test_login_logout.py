@@ -1,10 +1,10 @@
 import pytest
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import os
-import time
+from pages.admin_login_page import AdminLoginPage
+from pages.admin_logged_in_page import AdminLoggedInPage
 
+
+############################################Fixtures############################################
 @pytest.fixture()
 def receive_data():
     file_path = "../admin_credentials"
@@ -13,30 +13,26 @@ def receive_data():
     print(data.decode())
     os.close(file_descriptor)
     return data.decode().split()
+############################################End of Fixtures############################################
 
 
+@pytest.mark.url("/admin")
 def test_login_logout_admin_page(receive_data, browser):
     """
          Test is designed to check the login-logout on the Admin Page
     """
     data = receive_data
 
-    browser.get(browser.base_opencart_url + "/admin")
-    wait = WebDriverWait(browser, 2)
-
-    browser.find_element(By.ID, "input-username").send_keys(data[0])
-    browser.find_element(By.NAME, "password").send_keys(data[1])
-    browser.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
-
+    AdminLoginPage(browser).input_username(data[0])
+    AdminLoginPage(browser).input_password(data[1])
+    AdminLoginPage(browser).click_button()
     try:
-        wait.until(EC.visibility_of_element_located((By.XPATH, "//body[@class='modal-open']")))
-        browser.find_element(By.XPATH, "//body[@class='modal-open']/descendant::button[@class='btn-close']").click()
-        wait.until(EC.presence_of_element_located((By.XPATH, "//h1[text()='Dashboard']")))
-        element = browser.find_element(By.ID, "nav-profile")
-        assert element
-        browser.find_element(By.XPATH, "//span[text()='Logout']").click()
+        AdminLoggedInPage(browser).get_modal()
+        AdminLoggedInPage(browser).button_close_click()
+        AdminLoggedInPage(browser).get_dashboard()
+        assert AdminLoggedInPage(browser).get_nav_profile()
+        AdminLoggedInPage(browser).logout_click()
     except Exception:
-        wait.until(EC.presence_of_element_located((By.XPATH, "//h1[text()='Dashboard']")))
-        element = browser.find_element(By.ID, "nav-profile")
-        assert element
-        browser.find_element((By.XPATH, "//span[text()='Logout']")).click()
+        AdminLoggedInPage(browser).get_dashboard()
+        assert AdminLoggedInPage(browser).get_nav_profile()
+        AdminLoggedInPage(browser).logout_click()

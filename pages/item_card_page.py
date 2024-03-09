@@ -3,36 +3,51 @@ from pages.base_page import BasePage
 
 
 class ItemCardPage(BasePage):
+    __TITLE = By.TAG_NAME,"title"
+    __QUANTITY = By.XPATH, "//div[contains(text(), 'Qty')]"
+    __INPUT = By.NAME, "quantity"
+    __BUTTON =  By.ID, "button-cart"
+    __IMG_TAG = By.XPATH, "//div[@class='image magnific-popup']/a"
+    __PRODUCT_DESCRIPTION_TAG = By.XPATH, "//div[@id='tab-description']/p"
+    __TAB_DESCRIPTION = By.XPATH, "//a[@href='#tab-description']"
+    __TAB_REVIEW = By.XPATH, "//a[@href='#tab-review']"
+    __AUTHOR = By.ID, "input-author"
+    __TXT = By.ID, "input-text"
+    __RATING = By.ID, "input-rating"
+    __TOP = By.ID, "top"
 
-    PRODUCT_INFO = By.ID, "product-info"
-    TITLE = By.XPATH, "//head/title"
-    PRODUCT_TITLE = By.XPATH, "//div[@id='content']/div/div/h1"
-    def wait_page_load(self):
+    def get_title(self):
+        return self.get_elements(self.__TITLE)
 
-        self.get_element(self.PRODUCT_INFO)
-    def get_featured_elements(self):
-        return self.get_elements(self.FEATURED_ELEMENTS)
+    def get_qty(self):
+        return self.get_element(self.__QUANTITY)
 
-    def get_featured_product_name(self, index=0):
-        return self.get_elements(self.FEATURED_PRODUCT_NAME)[index].text
+    def get_input(self):
+        return self.get_element(self.__INPUT)
 
-    def get_img_elements_featured_products(self):
-        return self.get_elements(self.IMG_ELEMENTS)
+    def get_button(self):
+        return self.get_element(self.__BUTTON)
 
-    def get_img_titles(self):
-        return [item.get_attribute("title") for item in self.get_elements(self.IMG_ELEMENTS)]
+    def get_img_href(self):
+        return self.get_element(self.__IMG_TAG).get_attribute("href")
 
-    def click_featured_product(self, index=0):
-        if index == 0:
-            self.click(self.FEATURED_PRODUCT_NAME)
-        else:
-            self.get_elements(self.FEATURED_PRODUCT_NAME)[index].click()
+    def get_tab_description_text(self):
+        return self.get_element(self.__TAB_DESCRIPTION).text
+    def get_product_description_text(self):
+        return self.get_element(self.__PRODUCT_DESCRIPTION_TAG).text
 
-    def _title_name(self, title_name):
+    def click_tab_review(self):
+        self.click(self.__TAB_REVIEW)
 
-        return By.XPATH, self.PRODUCT_TITLE[1] + self._text_xpath(title_name)#.replace("\"","")
+    def get_author(self):
+        return self.get_element(self.__AUTHOR)
 
-    def wait_title_load(self, name):
+    def get_txt(self):
+        return self.get_element(self.__TXT)
 
-        self.get_element(self._title_name(name))
+    def get_rating(self):
+        return self.get_element(self.__RATING)
 
+
+    def get_top(self):
+        return self.get_element(self.__TOP)
