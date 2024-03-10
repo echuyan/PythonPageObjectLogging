@@ -1,6 +1,12 @@
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
+import os
+import json
+import time
 
+def get_path(file_name):
+    work_folder = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(work_folder, file_name)
 
 class UserRegPage(BasePage):
     __INPUT_FIRSTNAME = By.ID, "input-firstname"
@@ -10,6 +16,23 @@ class UserRegPage(BasePage):
     __BUTTON_SUBMIT = By.CSS_SELECTOR, "button[type='submit']"
     __OPEN_CART = By.XPATH, "//*[text()='OpenCart']"
     __CONTENT_TEXT = By.XPATH, "//div[@id='content']/h1"
+    __AGREE = By.XPATH, "//input[@type='checkbox' and @name='agree']"
+    __SUCCESS = By.XPATH, "//h1[text()='Your Account Has Been Created!']"
+
+    def fill_new_user_data(self, first_name: str, last_name: str, email: str, password: str):
+        self.get_element(self.__INPUT_FIRSTNAME).send_keys(first_name)
+        self.get_element(self.__INPUT_LASTNAME).send_keys(last_name)
+        self.get_element(self.__INPUT_EMAIL).send_keys(email)
+        self.get_element(self.__INPUT_PASSWORD).send_keys(password)
+        self.get_element(self.__AGREE).click()
+        self.get_element(self.__BUTTON_SUBMIT).click()
+
+        with open(get_path('registered_users.json'), "a") as f:
+            s = json.dumps([first_name,last_name,email,password], indent=4)
+            f.write(s)
+
+    def get_success(self):
+        return self.get_element(self.__SUCCESS)
 
     def get_input_firstname(self):
         return self.get_element(self.__INPUT_FIRSTNAME)
