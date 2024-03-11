@@ -15,7 +15,7 @@ class CataloguePage(BasePage):
     __CATALOGUE_ITEMS_NON_COMPONENTS = By.XPATH, "//a[@class='list-group-item' and not(contains(text(), 'Components'))]"
     __CONTENT = By.XPATH, "//div[@id='content']"
     __ITEMS_BUTTONS = By.XPATH, "//button[@type='submit']"
-    __CATALOGUE_ITEMS_NON_INNER = By.XPATH, "//a[@class='list-group-item' and not(contains(text(), '-'))]"
+    __CATALOGUE_ITEMS_NON_INNER = By.XPATH, "//a[@class='list-group-item' and not(contains(text(), '-')) and not(contains(text(), '0')) and not(contains(text(), 'Components'))]"
     __CATALOGUE_ITEMS = By.XPATH, "//a[@class='list-group-item']"
     __OPTIONS = By.XPATH, "//select[@id='input-limit']/option"
     __PRICES = By.XPATH, "//span[@class='price-new']"

@@ -1,20 +1,6 @@
-import pytest
 import allure
-from selenium.webdriver.common.by import By
-import random
 from pages.item_card_page import ItemCardPage
-from pages.main_page import MainPage
 CHECK_IMG = ".jpg"
-
-############################################Fixtures############################################
-@pytest.fixture()
-def open_random_featured_product(browser):
-    featured_elements = MainPage(browser).get_featured_elements()
-    random_index = random.randint(0, len(featured_elements) - 1)
-    element = featured_elements[random_index]
-    element.click()
-    ItemCardPage(browser).get_title()
-############################################End of Fixtures############################################
 
 def test_check_qty_input_and_button(open_random_featured_product, browser):
     """

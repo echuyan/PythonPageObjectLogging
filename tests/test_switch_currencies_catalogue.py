@@ -1,13 +1,4 @@
-import pytest
 from pages.catalogue_page import CataloguePage
-
-
-@pytest.fixture()
-def open_catalogue(browser):
-    CataloguePage(browser).get_narbar_menu()
-    CataloguePage(browser).click_narbar_menu_element()
-    CataloguePage(browser).click_see_all()
-    yield
 
 
 def test_switch_cur_catalogue(open_catalogue,browser):

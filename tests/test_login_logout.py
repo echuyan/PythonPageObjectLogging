@@ -4,18 +4,6 @@ from pages.admin_login_page import AdminLoginPage
 from pages.admin_logged_in_page import AdminLoggedInPage
 
 
-############################################Fixtures############################################
-@pytest.fixture()
-def receive_data():
-    file_path = "../admin_credentials"
-    file_descriptor = os.open(file_path, os.O_RDONLY)
-    data = os.read(file_descriptor, os.path.getsize(file_path))
-    print(data.decode())
-    os.close(file_descriptor)
-    return data.decode().split()
-############################################End of Fixtures############################################
-
-
 @pytest.mark.url("/admin")
 def test_login_logout_admin_page(receive_data, browser):
     """
