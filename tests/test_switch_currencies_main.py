@@ -1,37 +1,26 @@
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
+from pages.main_page import MainPage
 def test_switch_cur_main_page(browser):
     """
         Test is designed to check currency switching on the main page
     """
-
-    browser.get(browser.base_opencart_url)
-    wait = WebDriverWait(browser, 5)
-    wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "product-thumb")))
-    prices = browser.find_elements(By.XPATH, ("//span[@class='price-new']"))
+    MainPage(browser).get_featured_elements()
+    prices = MainPage(browser).get_prices()
     old_prices=[]
     for item in prices:
         old_prices.append(item.text)
-
-    current_cur = browser.find_element(By.XPATH, ("//form[@id='form-currency']/div/a/strong")).text
-
-    browser.find_element(By.XPATH, ("//span[contains(text(),'Currency')]")).click()
-
-    switches = browser.find_elements(By.XPATH, ("//form[@id='form-currency']/div/ul/li/a"))
+    current_cur = MainPage(browser).get_current_cur()
+    MainPage(browser).click_switcher()
+    switches = MainPage(browser).get_switches()
     for switch in switches:
         if current_cur in switch.text:
             pass
         else:
             switch.click()
             break
-
-    prices = browser.find_elements(By.XPATH, ("//span[@class='price-new']"))
+    prices = MainPage(browser).get_prices()
     new_prices = []
     for item in prices:
         new_prices.append(item.text)
-
     old_set = set(old_prices)
     new_set = set(new_prices)
     assert old_set.isdisjoint(new_set)
