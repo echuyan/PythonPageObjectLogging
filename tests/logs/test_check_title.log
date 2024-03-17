@@ -1,0 +1,11 @@
+INFO ===> Test test_check_title started at 2024-03-16 21:08:25.577193
+INFO Browser <function browser at 0x04971B68> started
+DEBUG MainPage: Get element ('xpath', "//head/title[text()='Your Store']") 
+INFO ===> Test test_check_title started at 2024-03-16 21:26:26.275995
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG Getting title name
+DEBUG MainPage: Get element ('xpath', "//head/title[text()='Your Store']") 
+INFO ===> Test test_check_title started at 2024-03-17 19:28:11.023720
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG Getting title name
+DEBUG MainPage: Get element ('xpath', "//head/title[text()='Your Store']") 

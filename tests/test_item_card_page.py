@@ -1,7 +1,11 @@
 import allure
 from pages.item_card_page import ItemCardPage
 CHECK_IMG = ".jpg"
+import allure
 
+
+@allure.epic('Checking locators')
+@allure.title('Checking buttons on the item card page')
 def test_check_qty_input_and_button(open_random_featured_product, browser):
     """
       Test is designed to check some functional elements are present on the item card page
@@ -9,6 +13,8 @@ def test_check_qty_input_and_button(open_random_featured_product, browser):
     assert ItemCardPage(browser).get_qty() and ItemCardPage(browser).get_input() and ItemCardPage(browser).get_button()
 
 
+@allure.epic('Checking locators')
+@allure.title('Checking images on the item card page')
 def test_check_image_present(open_random_featured_product, browser):
     """
       Test is designed to check that product image is present for a random product from featured list
@@ -18,7 +24,8 @@ def test_check_image_present(open_random_featured_product, browser):
     except Exception:
         print("Something went wrong. No element found.")
 
-
+@allure.epic('Checking locators')
+@allure.title('Checking description presence on the item card page')
 def test_check_description_present(open_random_featured_product, browser):
     """
       Test is designed to check that product description is present for a random product from featured list
@@ -34,7 +41,8 @@ def test_check_description_present(open_random_featured_product, browser):
             print("Something went wrong. No element found.")
 
 
-
+@allure.epic('Checking locators')
+@allure.title('Checking Review tab presence on the item card page')
 def test_check_review_tab(open_random_featured_product, browser):
     """
       Test is designed to check the Reviews tab content
@@ -45,7 +53,8 @@ def test_check_review_tab(open_random_featured_product, browser):
     except Exception:
         print("Something went wrong.")
 
-
+@allure.epic('Checking locators')
+@allure.title('Checking Navigation tab presence on the item card page')
 def test_check_nav_tab(open_random_featured_product, browser):
     """
       Test is designed to check that navigation tab is present on the item page

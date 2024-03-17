@@ -1,0 +1,26 @@
+INFO ===> Test test_check_pagination started at 2024-03-16 21:25:22.484064
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]")
+DEBUG MainPage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]") 
+DEBUG MainPage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]/following-sibling::div/a")
+DEBUG MainPage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]/following-sibling::div/a") 
+DEBUG CataloguePage: Get element ('class name', 'pagination') 
+DEBUG CataloguePage: Get element ('xpath', "//div[@class='col-sm-6 text-end']") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+DEBUG CataloguePage: Clicking element: ('xpath', "//a[contains(text(), '>') and not(contains(text(),'|'))]")
+DEBUG CataloguePage: Get element ('xpath', "//a[contains(text(), '>') and not(contains(text(),'|'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+INFO ===> Test test_check_pagination started at 2024-03-17 19:27:03.321646
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]")
+DEBUG MainPage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]") 
+DEBUG MainPage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]/following-sibling::div/a")
+DEBUG MainPage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a[contains(text(), 'Desktops')]/following-sibling::div/a") 
+DEBUG CataloguePage: Get element ('class name', 'pagination') 
+DEBUG CataloguePage: Get element ('xpath', "//div[@class='col-sm-6 text-end']") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+DEBUG CataloguePage: Clicking element: ('xpath', "//a[contains(text(), '>') and not(contains(text(),'|'))]")
+DEBUG CataloguePage: Get element ('xpath', "//a[contains(text(), '>') and not(contains(text(),'|'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 

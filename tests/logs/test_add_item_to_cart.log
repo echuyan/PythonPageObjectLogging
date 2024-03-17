@@ -1,0 +1,24 @@
+INFO ===> Test test_add_item_to_cart started at 2024-03-16 21:24:58.586160
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get element ('xpath', '//div/div/h4/a') 
+DEBUG MainPage: Get element ('xpath', "//div[@class='button-group']") 
+DEBUG MainPage: Get element ('xpath', "//div/form/div/button[@aria-label='Add to Cart']") 
+INFO ===> Test test_add_item_to_cart started at 2024-03-17 00:27:29.396109
+INFO Browser <function browser at 0x0436AB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get element ('xpath', '//div/div/h4/a') 
+DEBUG MainPage: Get element ('xpath', "//div[@class='button-group']") 
+DEBUG MainPage: Get element ('xpath', "//div/form/div/button[@aria-label='Add to Cart']") 
+INFO ===> Test test_add_item_to_cart started at 2024-03-17 19:26:07.421191
+INFO Browser <function browser at 0x040ABD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get element ('xpath', '//div/div/h4/a') 
+DEBUG MainPage: Get element ('xpath', "//div[@class='button-group']") 
+DEBUG MainPage: Get element ('xpath', "//div/form/div/button[@aria-label='Add to Cart']") 
+INFO ===> Test test_add_item_to_cart started at 2024-03-17 19:26:35.222557
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get element ('xpath', '//div/div/h4/a') 
+DEBUG MainPage: Get element ('xpath', "//div[@class='button-group']") 
+DEBUG MainPage: Get element ('xpath', "//div/form/div/button[@aria-label='Add to Cart']") 

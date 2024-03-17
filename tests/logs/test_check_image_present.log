@@ -1,0 +1,15 @@
+INFO ===> Test test_check_image_present started at 2024-03-16 21:25:58.747070
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('xpath', "//div[@class='image magnific-popup']/a") 
+INFO ===> Test test_check_image_present started at 2024-03-16 21:30:13.371695
+INFO Browser <function browser at 0x03DDFCA8> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('xpath', "//div[@class='image magnific-popup']/a") 
+INFO ===> Test test_check_image_present started at 2024-03-17 19:27:45.058231
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('xpath', "//div[@class='image magnific-popup']/a") 

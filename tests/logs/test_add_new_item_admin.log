@@ -1,0 +1,184 @@
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 21:15:20.553747
+INFO Browser <function browser at 0x04BE9D98> started
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 21:15:30.078588
+INFO Browser <function browser at 0x047FFCA8> started
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 21:16:19.959479
+INFO Browser <function browser at 0x0431FCA8> started
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 21:16:35.420043
+INFO Browser <function browser at 0x03EEFCA8> started
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG Filling product data with given parameters to create a new product: name: New Product, meta_tag: META TAG, model: MODEL, price: 5, keyword: 9TEFWD
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-name-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-meta-title-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='Data']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-model']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-price']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='SEO']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-keyword-0-1']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//div[@class='alert alert-success alert-dismissible']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 21:25:04.499921
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG Filling product data with given parameters to create a new product: name: New Product, meta_tag: META TAG, model: MODEL, price: 5, keyword: J2C7L3
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-name-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-meta-title-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='Data']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-model']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-price']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='SEO']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-keyword-0-1']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//div[@class='alert alert-success alert-dismissible']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 21:32:43.580472
+INFO Browser <function browser at 0x04029CA8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG Filling product data with given parameters to create a new product: name: New Product, meta_tag: META TAG, model: MODEL, price: 5, keyword: QZQMPU
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-name-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-meta-title-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='Data']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-model']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-price']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='SEO']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-keyword-0-1']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//div[@class='alert alert-success alert-dismissible']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 23:53:10.852502
+INFO Browser <function browser at 0x04C1FCA8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG Filling product data with given parameters to create a new product: name: New Product, meta_tag: META TAG, model: MODEL, price: 5, keyword: 8VEUCC
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-name-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-meta-title-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='Data']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-model']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-price']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='SEO']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-keyword-0-1']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//div[@class='alert alert-success alert-dismissible']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-16 23:57:28.548452
+INFO Browser <function browser at 0x03D19CA8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG Filling product data with given parameters to create a new product: name: New Product, meta_tag: META TAG, model: MODEL, price: 5, keyword: EW609R
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-name-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-meta-title-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='Data']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-model']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-price']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='SEO']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-keyword-0-1']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//div[@class='alert alert-success alert-dismissible']") 
+INFO ===> Test test_add_new_item_admin started at 2024-03-17 00:27:41.849503
+INFO Browser <function browser at 0x0436AB68> started
+INFO ===> Test test_add_new_item_admin started at 2024-03-17 19:26:11.153293
+INFO ===> Test test_add_new_item_admin started at 2024-03-17 19:26:41.026224
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG Filling product data with given parameters to create a new product: name: New Product, meta_tag: META TAG, model: MODEL, price: 5, keyword: DTKF6D
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-name-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-meta-title-1']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='Data']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-model']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-price']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()='SEO']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//input[@id='input-keyword-0-1']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-primary') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//div[@class='alert alert-success alert-dismissible']") 

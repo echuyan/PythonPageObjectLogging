@@ -1,0 +1,21 @@
+INFO ===> Test test_admin_login_page started at 2024-03-16 21:25:12.213771
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG AdminLoginPage: Get element ('xpath', "//div[@class='card-header']") 
+INFO ===> Test test_admin_login_page started at 2024-03-17 00:28:47.109534
+INFO Browser <function browser at 0x03AEABB8> started
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG AdminLoginPage: Get element ('xpath', "//div[@class='card-header']") 
+INFO ===> Test test_admin_login_page started at 2024-03-17 19:26:51.604087
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG AdminLoginPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG AdminLoginPage: Get element ('xpath', "//div[@class='card-header']") 

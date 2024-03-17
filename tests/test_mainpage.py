@@ -1,7 +1,9 @@
 from pages.main_page import MainPage
 from pages.item_card_page import ItemCardPage
+import allure
 
-
+@allure.epic('Checking locators')
+@allure.title('Checking title on the main page')
 def test_check_title(browser):
     """
       Test is designed to check the title of the Main Page
@@ -9,6 +11,8 @@ def test_check_title(browser):
     MainPage(browser).wait_title_load("Your Store")
 
 
+@allure.epic('Checking locators')
+@allure.title('Checking Featured section on the main page')
 def test_check_featured(browser):
     """
         Test is designed to check the Featured Section of the Main Page
@@ -26,6 +30,8 @@ def test_check_featured(browser):
         i += 1
 
 
+@allure.epic('Checking locators')
+@allure.title('Checking navigation bar on the main page')
 def test_check_nav_items(browser):
     """
         Test is designed to check the Navigation Bar of the Main Page
@@ -37,6 +43,8 @@ def test_check_nav_items(browser):
     assert len(nav_items) != 0 and len(nav_items_dropdown) != 0
 
 
+@allure.epic('Checking locators')
+@allure.title('Checking carousel on the main page')
 def test_check_carousel(browser):
     """
         Test is designed to check the carousel block of the Main Page
@@ -48,6 +56,8 @@ def test_check_carousel(browser):
     assert len(car_slides) == 2 and len(car_indicators) == 2
 
 
+@allure.epic('Checking locators')
+@allure.title('Checking cart on the main page')
 def test_check_cart(browser):
     """
         Test is designed to check the presence of the cart at the Main Page

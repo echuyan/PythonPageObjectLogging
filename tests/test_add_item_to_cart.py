@@ -2,7 +2,10 @@ from selenium.webdriver import ActionChains
 from pages.main_page import MainPage
 from pages.cart_page import CartPage
 from selenium.webdriver.common.keys import Keys
+import allure
 
+@allure.epic('Working with cart')
+@allure.title('Adding one item to cart')
 def test_add_item_to_cart(browser):
     """
         Test is designed to check adding a random item from the main page to the cart

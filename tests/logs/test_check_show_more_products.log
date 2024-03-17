@@ -1,0 +1,24 @@
+INFO ===> Test test_check_show_more_products started at 2024-03-16 21:25:43.145024
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG CataloguePage: Get element ('id', 'narbar-menu') 
+DEBUG CataloguePage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a")
+DEBUG CataloguePage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a") 
+DEBUG CataloguePage: Clicking element: ('class name', 'see-all')
+DEBUG CataloguePage: Get element ('class name', 'see-all') 
+DEBUG CataloguePage: Get elements ('xpath', "//a[@class='list-group-item' and not(contains(text(), '-')) and not(contains(text(), '0')) and not(contains(text(), 'Components'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@id='content']") 
+DEBUG CataloguePage: Get elements ('xpath', "//select[@id='input-limit']/option") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+INFO ===> Test test_check_show_more_products started at 2024-03-17 19:27:23.820626
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG CataloguePage: Get element ('id', 'narbar-menu') 
+DEBUG CataloguePage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a")
+DEBUG CataloguePage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a") 
+DEBUG CataloguePage: Clicking element: ('class name', 'see-all')
+DEBUG CataloguePage: Get element ('class name', 'see-all') 
+DEBUG CataloguePage: Get elements ('xpath', "//a[@class='list-group-item' and not(contains(text(), '-')) and not(contains(text(), '0')) and not(contains(text(), 'Components'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@id='content']") 
+DEBUG CataloguePage: Get elements ('xpath', "//select[@id='input-limit']/option") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
