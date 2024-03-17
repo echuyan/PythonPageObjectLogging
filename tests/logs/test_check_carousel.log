@@ -1,0 +1,10 @@
+INFO ===> Test test_check_carousel started at 2024-03-16 21:26:38.024742
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'carousel-inner') 
+DEBUG MainPage: Get elements ('xpath', "//div[@class='carousel slide']") 
+DEBUG MainPage: Get elements ('xpath', "//div[@class='carousel-indicators']") 
+INFO ===> Test test_check_carousel started at 2024-03-17 19:28:22.491442
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'carousel-inner') 
+DEBUG MainPage: Get elements ('xpath', "//div[@class='carousel slide']") 
+DEBUG MainPage: Get elements ('xpath', "//div[@class='carousel-indicators']") 

@@ -1,0 +1,56 @@
+INFO ===> Test test_user_reg_page started at 2024-03-16 21:26:46.241713
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG UserRegPage: Get element ('xpath', "//div[@id='content']/h1") 
+DEBUG UserRegPage: Get element ('id', 'input-firstname') 
+DEBUG UserRegPage: Get element ('id', 'input-lastname') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('name', 'password') 
+DEBUG UserRegPage: Get element ('xpath', "//input[@type='checkbox' and @name='agree']") 
+DEBUG UserRegPage: Get element ('css selector', "button[type='submit']") 
+DEBUG UserRegPage: Get element ('xpath', "//h1[text()='Your Account Has Been Created!']") 
+INFO ===> Test test_user_reg_page started at 2024-03-16 21:27:06.272155
+INFO ===> Test test_user_reg_page started at 2024-03-16 21:27:06.272155
+INFO Browser <function browser at 0x03E9FB68> started
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG UserRegPage: Get element ('id', 'input-firstname') 
+DEBUG UserRegPage: Get element ('id', 'input-firstname') 
+DEBUG UserRegPage: Get element ('id', 'input-lastname') 
+DEBUG UserRegPage: Get element ('id', 'input-lastname') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('css selector', "button[type='submit']") 
+DEBUG UserRegPage: Get element ('css selector', "button[type='submit']") 
+DEBUG UserRegPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG UserRegPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG UserRegPage: Get element ('xpath', "//div[@id='content']/h1") 
+DEBUG UserRegPage: Get element ('xpath', "//div[@id='content']/h1") 
+INFO ===> Test test_user_reg_page started at 2024-03-17 19:28:30.792921
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG UserRegPage: Get element ('xpath', "//div[@id='content']/h1") 
+DEBUG UserRegPage: Get element ('id', 'input-firstname') 
+DEBUG UserRegPage: Get element ('id', 'input-lastname') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('name', 'password') 
+DEBUG UserRegPage: Get element ('xpath', "//input[@type='checkbox' and @name='agree']") 
+DEBUG UserRegPage: Get element ('css selector', "button[type='submit']") 
+DEBUG UserRegPage: Get element ('xpath', "//h1[text()='Your Account Has Been Created!']") 
+INFO ===> Test test_user_reg_page started at 2024-03-17 19:28:48.150008
+INFO ===> Test test_user_reg_page started at 2024-03-17 19:28:48.150008
+INFO Browser <function browser at 0x0411DD98> started
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG UserRegPage: Get element ('id', 'input-firstname') 
+DEBUG UserRegPage: Get element ('id', 'input-firstname') 
+DEBUG UserRegPage: Get element ('id', 'input-lastname') 
+DEBUG UserRegPage: Get element ('id', 'input-lastname') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('id', 'input-email') 
+DEBUG UserRegPage: Get element ('css selector', "button[type='submit']") 
+DEBUG UserRegPage: Get element ('css selector', "button[type='submit']") 
+DEBUG UserRegPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG UserRegPage: Get element ('xpath', "//*[text()='OpenCart']") 
+DEBUG UserRegPage: Get element ('xpath', "//div[@id='content']/h1") 
+DEBUG UserRegPage: Get element ('xpath', "//div[@id='content']/h1") 

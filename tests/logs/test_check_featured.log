@@ -1,0 +1,12 @@
+INFO ===> Test test_check_featured started at 2024-03-16 21:26:30.361149
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get elements ('xpath', "//div[@class='product-thumb']/div/a/img") 
+DEBUG MainPage: Clicking element: ('css selector', '#content > div.row .product-thumb h4 a')
+DEBUG MainPage: Get element ('css selector', '#content > div.row .product-thumb h4 a') 
+INFO ===> Test test_check_featured started at 2024-03-17 19:28:15.052305
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get elements ('xpath', "//div[@class='product-thumb']/div/a/img") 
+DEBUG MainPage: Clicking element: ('css selector', '#content > div.row .product-thumb h4 a')
+DEBUG MainPage: Get element ('css selector', '#content > div.row .product-thumb h4 a') 

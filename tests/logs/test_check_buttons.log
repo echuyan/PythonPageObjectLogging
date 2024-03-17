@@ -1,0 +1,20 @@
+INFO ===> Test test_check_buttons started at 2024-03-16 21:25:36.414112
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG CataloguePage: Get element ('id', 'narbar-menu') 
+DEBUG CataloguePage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a")
+DEBUG CataloguePage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a") 
+DEBUG CataloguePage: Clicking element: ('class name', 'see-all')
+DEBUG CataloguePage: Get element ('class name', 'see-all') 
+DEBUG CataloguePage: Get elements ('xpath', "//a[@class='list-group-item' and not(contains(text(), 'Components'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@id='content']") 
+DEBUG CataloguePage: Get elements ('xpath', "//button[@type='submit']") 
+INFO ===> Test test_check_buttons started at 2024-03-17 19:27:17.280896
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG CataloguePage: Get element ('id', 'narbar-menu') 
+DEBUG CataloguePage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a")
+DEBUG CataloguePage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a") 
+DEBUG CataloguePage: Clicking element: ('class name', 'see-all')
+DEBUG CataloguePage: Get element ('class name', 'see-all') 
+DEBUG CataloguePage: Get elements ('xpath', "//a[@class='list-group-item' and not(contains(text(), 'Components'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@id='content']") 
+DEBUG CataloguePage: Get elements ('xpath', "//button[@type='submit']") 

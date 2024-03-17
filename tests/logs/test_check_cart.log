@@ -1,0 +1,8 @@
+INFO ===> Test test_check_cart started at 2024-03-16 21:26:42.053937
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('id', 'header-cart') 
+DEBUG MainPage: Get element ('xpath', "//div[@id='header-cart']/div/button") 
+INFO ===> Test test_check_cart started at 2024-03-17 19:28:26.601900
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('id', 'header-cart') 
+DEBUG MainPage: Get element ('xpath', "//div[@id='header-cart']/div/button") 

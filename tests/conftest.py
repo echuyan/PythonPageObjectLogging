@@ -10,13 +10,18 @@ from pages.catalogue_page import CataloguePage
 from pages.main_page import MainPage
 from pages.item_card_page import ItemCardPage
 import random
+import logging
+import datetime
+import allure
 
 def pytest_addoption(parser):
     parser.addoption("--browser", default="chrome")
     parser.addoption("--headless", action="store_true")
     parser.addoption("--base_opencart_url", default="http://localhost/oc/")
+    parser.addoption("--log_level", action="store", default="DEBUG")
 
 @pytest.fixture()
+@allure.title('Opening a random featured product on the main page (fixture)')
 def open_random_featured_product(browser):
     featured_elements = MainPage(browser).get_featured_elements()
     random_index = random.randint(0, len(featured_elements) - 1)
@@ -25,6 +30,7 @@ def open_random_featured_product(browser):
     ItemCardPage(browser).get_title()
 
 @pytest.fixture()
+@allure.title('Opening catalogue from the main page (fixture)')
 def open_catalogue(browser):
     CataloguePage(browser).get_narbar_menu()
     CataloguePage(browser).click_narbar_menu_element()
@@ -32,6 +38,7 @@ def open_catalogue(browser):
     yield
 
 @pytest.fixture()
+@allure.title('Opening Desktops section of the catalogue (fixture)')
 def open_catalogue_desktops(browser):
     MainPage(browser).get_featured_elements()
     MainPage(browser).click_desktops_row()
@@ -40,6 +47,7 @@ def open_catalogue_desktops(browser):
 
 
 @pytest.fixture()
+@allure.title('Getting admin credentials from the file (fixture)')
 def receive_data():
     file_path = "../admin_credentials"
     file_descriptor = os.open(file_path, os.O_RDONLY)
@@ -49,6 +57,7 @@ def receive_data():
     return data.decode().split()
 
 @pytest.fixture()
+@allure.title('Logging in as an admin (fixture)')
 def login(receive_data, browser):
     data = receive_data
     AdminLoginPage(browser).input_username(data[0])
@@ -64,12 +73,22 @@ def login(receive_data, browser):
         return False
 
 @pytest.fixture()
+@allure.title('Instantiating a browser (fixture)')
 def browser(request):
     browser_name = request.config.getoption("--browser")
     headless = request.config.getoption("--headless")
     base_opencart_url = request.config.getoption("--base_opencart_url")
+    log_level = request.config.getoption("--log_level")
 
     driver = None
+
+    logger = logging.getLogger(request.node.name)
+    file_handler = logging.FileHandler(f"logs/{request.node.name}.log")
+    file_handler.setFormatter(logging.Formatter('%(levelname)s %(message)s'))
+    logger.addHandler(file_handler)
+    logger.setLevel(log_level)
+
+    logger.info("===> Test %s started at %s" % (request.node.name, datetime.datetime.now()))
 
     if browser_name == "chrome":
         options = ChromeOptions()
@@ -88,6 +107,13 @@ def browser(request):
             options.add_argument("--headless=new")
         binary_yandex_driver_file = '../drivers/yandexdriver.exe'
         driver = webdriver.Chrome(binary_yandex_driver_file, options=options)
+
+    driver.log_level = log_level
+    driver.logger = logger
+    driver.test_name = request.node.name
+
+    logger.info("Browser %s started" % browser)
+
     driver.maximize_window()
     # driver.get(base_opencart_url)
     custom_url = request.node.get_closest_marker("url")

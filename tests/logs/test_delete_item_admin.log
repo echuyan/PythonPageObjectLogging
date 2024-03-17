@@ -1,0 +1,29 @@
+INFO ===> Test test_delete_item_admin started at 2024-03-16 21:25:49.762190
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get elements ('xpath', "//input[@type='checkbox']") 
+INFO ===> Test test_delete_item_admin started at 2024-03-17 19:27:30.926268
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//a[text()=' Catalog']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//li[@id='menu-catalog']/ul/li/a[text()='Products']") 
+DEBUG AdminLoggedInPage: Get elements ('xpath', "//input[@type='checkbox']") 
+DEBUG AdminLoggedInPage: Get element ('css selector', '.float-end .btn.btn-danger') 

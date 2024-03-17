@@ -1,0 +1,21 @@
+INFO ===> Test test_check_qty_input_and_button started at 2024-03-16 21:25:53.997310
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('xpath', "//div[contains(text(), 'Qty')]") 
+DEBUG ItemCardPage: Get element ('name', 'quantity') 
+DEBUG ItemCardPage: Get element ('id', 'button-cart') 
+INFO ===> Test test_check_qty_input_and_button started at 2024-03-16 21:30:07.791436
+INFO Browser <function browser at 0x03DDFCA8> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('xpath', "//div[contains(text(), 'Qty')]") 
+DEBUG ItemCardPage: Get element ('name', 'quantity') 
+DEBUG ItemCardPage: Get element ('id', 'button-cart') 
+INFO ===> Test test_check_qty_input_and_button started at 2024-03-17 19:27:40.260921
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('xpath', "//div[contains(text(), 'Qty')]") 
+DEBUG ItemCardPage: Get element ('name', 'quantity') 
+DEBUG ItemCardPage: Get element ('id', 'button-cart') 

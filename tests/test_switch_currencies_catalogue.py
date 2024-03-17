@@ -1,7 +1,9 @@
 from pages.catalogue_page import CataloguePage
+import allure
 
-
-def test_switch_cur_catalogue(open_catalogue,browser):
+@allure.epic('Currencies')
+@allure.title('Checking currency switching on the catalogue page')
+def test_switch_cur_catalogue(open_catalogue, browser):
     """
         Test is designed to check currency switching at the catalogue page
     """

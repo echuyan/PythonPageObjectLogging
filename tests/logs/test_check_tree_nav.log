@@ -1,0 +1,20 @@
+INFO ===> Test test_check_tree_nav started at 2024-03-16 21:25:29.780047
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG CataloguePage: Get element ('id', 'narbar-menu') 
+DEBUG CataloguePage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a")
+DEBUG CataloguePage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a") 
+DEBUG CataloguePage: Clicking element: ('class name', 'see-all')
+DEBUG CataloguePage: Get element ('class name', 'see-all') 
+DEBUG CataloguePage: Get elements ('xpath', "//a[@class='list-group-item' and not(contains(text(), 'Components'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@id='content']") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 
+INFO ===> Test test_check_tree_nav started at 2024-03-17 19:27:10.508100
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG CataloguePage: Get element ('id', 'narbar-menu') 
+DEBUG CataloguePage: Clicking element: ('xpath', "//div[@id='narbar-menu']/ul/li/a")
+DEBUG CataloguePage: Get element ('xpath', "//div[@id='narbar-menu']/ul/li/a") 
+DEBUG CataloguePage: Clicking element: ('class name', 'see-all')
+DEBUG CataloguePage: Get element ('class name', 'see-all') 
+DEBUG CataloguePage: Get elements ('xpath', "//a[@class='list-group-item' and not(contains(text(), 'Components'))]") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@id='content']") 
+DEBUG CataloguePage: Get elements ('xpath', "//div[@class='product-thumb']") 

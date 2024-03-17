@@ -2,9 +2,11 @@ import pytest
 from pages.user_reg_page import UserRegPage
 import random
 import string
-
+import allure
 
 @pytest.mark.url("/index.php?route=account/register")
+@allure.epic('Registration')
+@allure.title('Checking new user registration')
 def test_user_reg_page(browser):
     """
          Test is designed to check the User Registration page

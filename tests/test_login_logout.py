@@ -2,9 +2,12 @@ import pytest
 import os
 from pages.admin_login_page import AdminLoginPage
 from pages.admin_logged_in_page import AdminLoggedInPage
+import allure
 
 
 @pytest.mark.url("/admin")
+@allure.epic('Login-Logout')
+@allure.title('Logging in and out as an admin')
 def test_login_logout_admin_page(receive_data, browser):
     """
          Test is designed to check the login-logout on the Admin Page
