@@ -1,6 +1,9 @@
 import pytest
 from pages.user_reg_page import UserRegPage
+import allure
 
+@allure.epic('Checking locators')
+@allure.title('Checking different locators on the user registration page')
 @pytest.mark.url("/index.php?route=account/register")
 def test_user_reg_page(browser):
     """

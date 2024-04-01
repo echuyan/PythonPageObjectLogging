@@ -1,0 +1,15 @@
+INFO ===> Test test_check_nav_tab started at 2024-03-16 21:26:16.779115
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('id', 'top') 
+INFO ===> Test test_check_nav_tab started at 2024-03-16 21:30:31.025886
+INFO Browser <function browser at 0x03DDFCA8> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('id', 'top') 
+INFO ===> Test test_check_nav_tab started at 2024-03-17 19:27:59.501090
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Get element ('id', 'top') 

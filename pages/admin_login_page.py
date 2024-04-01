@@ -11,9 +11,11 @@ class AdminLoginPage(BasePage):
 
 
     def input_username(self,username: str):
+        self.logger.debug("Sending usernaname")
         self.get_element(self.__INPUT_USERNAME).send_keys(username)
 
     def input_password(self, password: str):
+        self.logger.debug("Sending password")
         self.get_element(self.__PASSWORD).send_keys(password)
 
     def click_button(self):

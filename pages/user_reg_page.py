@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 import os
 import json
-import time
+import allure
 
 def get_path(file_name):
     work_folder = os.path.dirname(os.path.abspath(__file__))
@@ -19,6 +19,7 @@ class UserRegPage(BasePage):
     __AGREE = By.XPATH, "//input[@type='checkbox' and @name='agree']"
     __SUCCESS = By.XPATH, "//h1[text()='Your Account Has Been Created!']"
 
+    @allure.step("Filling new user data with given parameters to create a new user: first name: '{first_name}', last name: '{last_name}', email: '{email}', password: '{password}'")
     def fill_new_user_data(self, first_name: str, last_name: str, email: str, password: str):
         self.get_element(self.__INPUT_FIRSTNAME).send_keys(first_name)
         self.get_element(self.__INPUT_LASTNAME).send_keys(last_name)

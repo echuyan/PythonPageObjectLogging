@@ -1,4 +1,8 @@
 from pages.main_page import MainPage
+import allure
+
+@allure.epic('Currencies')
+@allure.title('Checking currency switching on the main page')
 def test_switch_cur_main_page(browser):
     """
         Test is designed to check currency switching on the main page

@@ -1,0 +1,132 @@
+INFO ===> Test test_login_logout_admin_page started at 2024-03-16 21:26:21.352919
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-16 21:43:35.421222
+INFO Browser <function browser at 0x0436FCF8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-16 21:44:52.852019
+INFO Browser <function browser at 0x0411FCF8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-16 21:49:57.546989
+INFO Browser <function browser at 0x04C9FCF8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-16 21:58:05.996441
+INFO Browser <function browser at 0x0472ACF8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-16 23:46:01.073271
+INFO Browser <function browser at 0x04ADFCF8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-17 19:00:23.554324
+INFO Browser <function browser at 0x048CACA8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-17 19:01:04.580917
+INFO Browser <function browser at 0x0498ACA8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-17 19:04:43.696890
+INFO Browser <function browser at 0x04BFDCF8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-17 19:08:38.363328
+INFO Browser <function browser at 0x04D0DDE8> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 
+INFO ===> Test test_login_logout_admin_page started at 2024-03-17 19:28:04.012309
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG Sending usernaname
+DEBUG AdminLoginPage: Get element ('id', 'input-username') 
+DEBUG Sending password
+DEBUG AdminLoginPage: Get element ('name', 'password') 
+DEBUG AdminLoginPage: Get element ('css selector', "button[type='submit']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//body[@class='modal-open']/descendant::button[@class='btn-close']") 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//h1[text()='Dashboard']") 
+DEBUG AdminLoggedInPage: Get element ('id', 'nav-profile') 
+DEBUG AdminLoggedInPage: Get element ('xpath', "//span[text()='Logout']") 

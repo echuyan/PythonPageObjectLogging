@@ -1,0 +1,16 @@
+INFO ===> Test test_switch_cur_main_page started at 2024-03-16 21:27:01.557390
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get elements ('xpath', "//span[@class='price-new']") 
+DEBUG MainPage: Get element ('xpath', "//form[@id='form-currency']/div/a/strong") 
+DEBUG MainPage: Get element ('xpath', "//span[contains(text(),'Currency')]") 
+DEBUG MainPage: Get elements ('xpath', "//form[@id='form-currency']/div/ul/li/a") 
+DEBUG MainPage: Get elements ('xpath', "//span[@class='price-new']") 
+INFO ===> Test test_switch_cur_main_page started at 2024-03-17 19:28:43.255499
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get elements ('xpath', "//span[@class='price-new']") 
+DEBUG MainPage: Get element ('xpath', "//form[@id='form-currency']/div/a/strong") 
+DEBUG MainPage: Get element ('xpath', "//span[contains(text(),'Currency')]") 
+DEBUG MainPage: Get elements ('xpath', "//form[@id='form-currency']/div/ul/li/a") 
+DEBUG MainPage: Get elements ('xpath', "//span[@class='price-new']") 

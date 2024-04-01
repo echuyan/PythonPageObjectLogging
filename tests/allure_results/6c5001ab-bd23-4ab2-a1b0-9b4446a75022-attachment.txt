@@ -1,0 +1,47 @@
+INFO     test_check_nav_tab:conftest.py:91 ===> Test test_check_nav_tab started at 2024-03-17 19:27:59.501090
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:75 Selenium Manager binary found at: C:\otusPython\HW78POLog\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:134 Executing process: C:\otusPython\HW78POLog\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 chromedriver not found in PATH
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 Output: "\r\r\n\r\r\nVersion=122.0.6261.129\r\r\n\r\r\n\r\r\n\r"
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 Detected browser: chrome 122.0.6261.129
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 Required driver: chromedriver 122.0.6261.128
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 chromedriver 122.0.6261.128 already in the cache
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 Driver path: C:\Users\Елена\.cache\selenium\chromedriver\win64\122.0.6261.128\chromedriver.exe
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:151 Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:110 Using driver at: C:\Users\Елена\.cache\selenium\chromedriver\win64\122.0.6261.128\chromedriver.exe
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `C:\Users\Елена\.cache\selenium\chromedriver\win64\122.0.6261.128\chromedriver.exe` in a child process with pid: 24876 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): localhost:63430
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"122.0.6261.129","chrome":{"chromedriverVersion":"122.0.6261.128 (f18a44fedeb29764b2b5336c120fdd90ef1a3f5c-refs/branch-heads/6261@{#1057})","userDataDir":"C:\\Users\\6145~1\\AppData\\Local\\Temp\\scoped_dir24876_1684853982"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63437"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"18988b718742ba40a3c3adbe6ec3c5bc"}} | headers=HTTPHeaderDict({'Content-Length': '885', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+INFO     test_check_nav_tab:conftest.py:115 Browser <function browser at 0x0411DD98> started
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session/18988b718742ba40a3c3adbe6ec3c5bc/window/maximize {}
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session/18988b718742ba40a3c3adbe6ec3c5bc/window/maximize HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":{"height":1128,"width":2768,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session/18988b718742ba40a3c3adbe6ec3c5bc/url {'url': 'http://localhost/oc/'}
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session/18988b718742ba40a3c3adbe6ec3c5bc/url HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+DEBUG    test_check_nav_tab:base_page.py:22 MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session/18988b718742ba40a3c3adbe6ec3c5bc/elements {'using': 'css selector', 'value': '.product-thumb'}
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session/18988b718742ba40a3c3adbe6ec3c5bc/elements HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.26C73DE164BAC132EE8DB22A07861EDD.d.FD2342922CC95E14081284CC9FD65843.e.350"},{"element-6066-11e4-a52e-4f735466cecf":"f.26C73DE164BAC132EE8DB22A07861EDD.d.FD2342922CC95E14081284CC9FD65843.e.402"},{"element-6066-11e4-a52e-4f735466cecf":"f.26C73DE164BAC132EE8DB22A07861EDD.d.FD2342922CC95E14081284CC9FD65843.e.457"},{"element-6066-11e4-a52e-4f735466cecf":"f.26C73DE164BAC132EE8DB22A07861EDD.d.FD2342922CC95E14081284CC9FD65843.e.512"}]} | headers=HTTPHeaderDict({'Content-Length': '483', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session/18988b718742ba40a3c3adbe6ec3c5bc/element/f.26C73DE164BAC132EE8DB22A07861EDD.d.FD2342922CC95E14081284CC9FD65843.e.457/click {}
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session/18988b718742ba40a3c3adbe6ec3c5bc/element/f.26C73DE164BAC132EE8DB22A07861EDD.d.FD2342922CC95E14081284CC9FD65843.e.457/click HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+DEBUG    test_check_nav_tab:base_page.py:22 ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session/18988b718742ba40a3c3adbe6ec3c5bc/elements {'using': 'tag name', 'value': 'title'}
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session/18988b718742ba40a3c3adbe6ec3c5bc/elements HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.26C73DE164BAC132EE8DB22A07861EDD.d.E58CC362099A79BCD236D8A32556ECB7.e.2607"}]} | headers=HTTPHeaderDict({'Content-Length': '130', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+DEBUG    test_check_nav_tab:base_page.py:17 ItemCardPage: Get element ('id', 'top') 
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:63430/session/18988b718742ba40a3c3adbe6ec3c5bc/element {'using': 'css selector', 'value': '[id="top"]'}
+DEBUG    urllib3.connectionpool:connectionpool.py:549 http://localhost:63430 "POST /session/18988b718742ba40a3c3adbe6ec3c5bc/element HTTP/1.1" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.26C73DE164BAC132EE8DB22A07861EDD.d.E58CC362099A79BCD236D8A32556ECB7.e.1058"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request

@@ -1,0 +1,10 @@
+INFO ===> Test test_check_nav_items started at 2024-03-16 21:26:33.814251
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get elements ('xpath', "//li[@class='nav-item dropdown']") 
+DEBUG MainPage: Get elements ('xpath', "//li[@class='nav-item']") 
+INFO ===> Test test_check_nav_items started at 2024-03-17 19:28:18.321218
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG MainPage: Get elements ('xpath', "//li[@class='nav-item dropdown']") 
+DEBUG MainPage: Get elements ('xpath', "//li[@class='nav-item']") 

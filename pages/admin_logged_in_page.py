@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 import time
 import random
+import allure
 
 
 class AdminLoggedInPage(BasePage):
@@ -26,7 +27,10 @@ class AdminLoggedInPage(BasePage):
     __SUCCESS = By.XPATH, "//div[@class='alert alert-success alert-dismissible']"
     __CHECKBOXES = By.XPATH, "//input[@type='checkbox']"
     __DELETE_BUTTON = By.CSS_SELECTOR, '.float-end .btn.btn-danger'
+
+    @allure.step("Filling product data with given parameters to create a new product: name: '{product_name}', meta_tag: '{meta_tag}', model: '{model}', price: '{price}', keyword: '{keyword}' ")
     def fill_new_product_data(self, product_name: str, meta_tag: str, model: str, price: float,keyword: str):
+        self.logger.debug("Filling product data with given parameters to create a new product: name: %s, meta_tag: %s, model: %s, price: %d, keyword: %s" %(product_name, meta_tag, model, price, keyword))
         self.get_element(self.__PRODUCT_NAME).send_keys(product_name)
         self.get_element(self.__META_TAG).send_keys(meta_tag)
         self.get_element(self.__DATA_TAB).click()

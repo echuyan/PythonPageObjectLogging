@@ -1,0 +1,27 @@
+INFO ===> Test test_check_review_tab started at 2024-03-16 21:26:11.535541
+INFO Browser <function browser at 0x03E9FB68> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Clicking element: ('xpath', "//a[@href='#tab-review']")
+DEBUG ItemCardPage: Get element ('xpath', "//a[@href='#tab-review']") 
+DEBUG ItemCardPage: Get element ('id', 'input-author') 
+DEBUG ItemCardPage: Get element ('id', 'input-text') 
+DEBUG ItemCardPage: Get element ('id', 'input-rating') 
+INFO ===> Test test_check_review_tab started at 2024-03-16 21:30:25.877130
+INFO Browser <function browser at 0x03DDFCA8> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Clicking element: ('xpath', "//a[@href='#tab-review']")
+DEBUG ItemCardPage: Get element ('xpath', "//a[@href='#tab-review']") 
+DEBUG ItemCardPage: Get element ('id', 'input-author') 
+DEBUG ItemCardPage: Get element ('id', 'input-text') 
+DEBUG ItemCardPage: Get element ('id', 'input-rating') 
+INFO ===> Test test_check_review_tab started at 2024-03-17 19:27:54.220476
+INFO Browser <function browser at 0x0411DD98> started
+DEBUG MainPage: Get elements ('class name', 'product-thumb') 
+DEBUG ItemCardPage: Get elements ('tag name', 'title') 
+DEBUG ItemCardPage: Clicking element: ('xpath', "//a[@href='#tab-review']")
+DEBUG ItemCardPage: Get element ('xpath', "//a[@href='#tab-review']") 
+DEBUG ItemCardPage: Get element ('id', 'input-author') 
+DEBUG ItemCardPage: Get element ('id', 'input-text') 
+DEBUG ItemCardPage: Get element ('id', 'input-rating') 

@@ -92,10 +92,10 @@ class MainPage(BasePage):
             self.get_elements(self.FEATURED_PRODUCT_NAME)[index].click()
 
     def _title_name(self, title_name):
-
+        self.logger.debug("Getting title name")
         return By.XPATH, self.TITLE[1] + self._text_xpath(title_name)
 
     def wait_title_load(self, name):
-        print(self._title_name(name))
+
         self.get_element(self._title_name(name))
 
