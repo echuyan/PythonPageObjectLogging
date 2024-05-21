@@ -13,12 +13,20 @@ import random
 import logging
 import datetime
 import allure
+import requests
+import time
 
 def pytest_addoption(parser):
     parser.addoption("--browser", default="chrome")
     parser.addoption("--headless", action="store_true")
-    parser.addoption("--base_opencart_url", default="http://localhost/oc/")
+    parser.addoption("--base_opencart_url", default="https://demo.opencart.com/")
     parser.addoption("--log_level", action="store", default="DEBUG")
+    parser.addoption("--logs", action="store_true")
+    parser.addoption("--executor", action="store", default="127.0.0.1")
+    parser.addoption("--vnc", action="store_true")
+    parser.addoption("--video", action="store_true")
+    parser.addoption("--bv")
+
 
 @pytest.fixture()
 @allure.title('Opening a random featured product on the main page (fixture)')
@@ -72,6 +80,21 @@ def login(receive_data, browser):
     except:
         return False
 
+@allure.step("Waiting for availability {url}")
+def wait_url_data(url, timeout=10):
+    """Метод ожидания доступности урла"""
+    while timeout:
+        response = requests.get(url)
+        if not response.ok:
+            time.sleep(1)
+            timeout -= 1
+        else:
+            if "video" in url:
+                return response.content
+            else:
+                return response.text
+    return None
+
 @pytest.fixture()
 @allure.title('Instantiating a browser (fixture)')
 def browser(request):
@@ -79,6 +102,12 @@ def browser(request):
     headless = request.config.getoption("--headless")
     base_opencart_url = request.config.getoption("--base_opencart_url")
     log_level = request.config.getoption("--log_level")
+    executor = request.config.getoption("--executor")
+    vnc = request.config.getoption("--vnc")
+    version = request.config.getoption("--bv")
+    video = request.config.getoption("--video")
+    executor_url = f"http://{executor}:4444/wd/hub"
+    logs = request.config.getoption("--logs")
 
     driver = None
 
@@ -95,18 +124,41 @@ def browser(request):
         if headless:
             options.add_argument("--headless=new")
         service = ChromeService()
-        driver = webdriver.Chrome(service=service,options=options)
+        #driver = webdriver.Chrome(service=service,options=options)
     elif browser_name == "ff":
         options = FFOptions()
         if headless:
             options.add_argument("-headless")
-        driver = webdriver.Firefox(options=options)
+        #driver = webdriver.Firefox(options=options)
     elif browser_name == "ya":
         options = ChromeOptions()
         if headless:
             options.add_argument("--headless=new")
         binary_yandex_driver_file = '../drivers/yandexdriver.exe'
-        driver = webdriver.Chrome(binary_yandex_driver_file, options=options)
+        #driver = webdriver.Chrome(binary_yandex_driver_file, options=options)
+
+    capabilities = {
+        "browserName": browser_name,
+        "browserVersion": version,
+        "selenoid:options": {
+            "enableVNC": vnc,
+            "name": os.getenv("BUILD_NUMBER", str(random.randint(9000, 10000))),
+            "screenResolution": "1280x2000",
+            "enableVideo": video,
+            "enableLog": logs,
+            "timeZone": "Europe/Moscow",
+            "env": ["LANG=ru_RU.UTF-8", "LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8"]
+
+        },
+        "acceptInsecureCerts": True,
+    }
+    for k, v in capabilities.items():
+        options.set_capability(k, v)
+
+    driver = webdriver.Remote(
+        command_executor=executor_url,
+        options=options
+    )
 
     driver.log_level = log_level
     driver.logger = logger
@@ -115,12 +167,13 @@ def browser(request):
     logger.info("Browser %s started" % browser)
 
     driver.maximize_window()
-    # driver.get(base_opencart_url)
+
     custom_url = request.node.get_closest_marker("url")
     if custom_url:
-        driver.get(base_opencart_url+custom_url.args[0])
+        driver.get(base_opencart_url + custom_url.args[0])
     else:
         driver.get(base_opencart_url)
+
     return driver
 
 
