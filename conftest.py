@@ -109,7 +109,8 @@ def browser(request):
     vnc = request.config.getoption("--vnc")
     version = request.config.getoption("--bv")
     video = request.config.getoption("--video")
-    executor_url = f"http://{executor}:4444/wd/hub"
+    #executor_url = f"http://{executor}:4444/wd/hub"
+    executor_url = executor
     logs = request.config.getoption("--logs")
     remote = request.config.getoption("--remote")
 
