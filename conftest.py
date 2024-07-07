@@ -17,19 +17,34 @@ import requests
 import time
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", default="firefox")
+    parser.addoption("--browser", default="chrome")
     parser.addoption("--headless", action="store_true")
+    ###global opencart site
     #parser.addoption("--base_opencart_url", default="https://demo.opencart.com/")
-    parser.addoption("--base_opencart_url", default="https://192.168.65.254/oc")
-    #parser.addoption("--base_opencart_url", default="https://127.0.0.1/oc")
+    ####if ran on local selenoid with docker
+    #parser.addoption("--base_opencart_url", default="http://192.168.65.254/oc")
+    ####if ran locally
+    parser.addoption("--base_opencart_url", default="http://127.0.0.1/oc")
     parser.addoption("--log_level", action="store", default="DEBUG")
     parser.addoption("--logs", action="store_true")
-    #parser.addoption("--executor", action="store", default="127.0.0.1")
-    parser.addoption("--executor", default="192.168.65.254")
+    ###if ran locally
+    parser.addoption("--executor", action="store", default="127.0.0.1")
+    ###if ran in docker
+    #parser.addoption("--executor", default="http://192.168.65.254:4444/wd/hub")
     parser.addoption("--vnc", action="store_true")
     parser.addoption("--video", action="store_true")
     parser.addoption("--bv")
-    parser.addoption("--remote", action="store_true", default="TRUE")
+    parser.addoption("--remote", action="store_true", default="FALSE")
+    parser.addoption("--threads", action="store_true", default=1)
+
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+    if rep.outcome != 'passed':
+        item.status = 'failed'
+    else:
+        item.status = 'passed'
 
 @pytest.fixture()
 @allure.title('Opening a random featured product on the main page (fixture)')
@@ -113,12 +128,15 @@ def browser(request):
     executor_url = executor
     logs = request.config.getoption("--logs")
     remote = request.config.getoption("--remote")
+    threads = request.config.getoption("--threads")
 
     driver = None
 
     logger = logging.getLogger(request.node.name)
-    file_handler = logging.FileHandler(f"tests/logs/{request.node.name}.log")
-    #file_handler = logging.FileHandler(f"logs/{request.node.name}.log")
+    ### if ran remotely
+    #file_handler = logging.FileHandler(f"tests/logs/{request.node.name}.log")
+    ### if ran locally
+    file_handler = logging.FileHandler(f"logs/{request.node.name}.log")
     file_handler.setFormatter(logging.Formatter('%(levelname)s %(message)s'))
     logger.addHandler(file_handler)
     logger.setLevel(log_level)
@@ -204,7 +222,22 @@ def browser(request):
     else:
         driver.get(base_opencart_url)
 
-    return driver
+    #return driver
+    yield driver
+
+    if request.node.status == "failed":
+        allure.attach(
+            name="failure_screenshot",
+            body=driver.get_screenshot_as_png(),
+            attachment_type=allure.attachment_type.PNG
+        )
+        allure.attach(
+            name="page_source",
+            body=driver.page_source,
+            attachment_type=allure.attachment_type.HTML
+        )
+
+    driver.quit()
 
 
 

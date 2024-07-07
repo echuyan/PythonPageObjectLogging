@@ -1,0 +1,59 @@
+pipeline {
+    agent any
+    parameters {
+        string(name: 'EXECUTOR')
+        string(name: 'BASE_OPENCART_URL')
+        string(name: 'BROWSER')
+        number(name: 'THREADS', defaultValue: 1
+    }
+    environment {
+        ALLURE_RESULTS = 'allure-results'
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/echuyan/PythonPageObjectLogging.git'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'pip install -r requirements.txt --break-system-packages'
+                sh 'pip install pytest --break-system-packages'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                script {
+
+                    def pytestPath = '/var/jenkins_home/.local/bin'
+                    env.PATH = "${pytestPath}:${env.PATH}"
+                }
+                script {
+                    def executor = params.EXECUTOR
+                    def base_opencart_url = params.BASE_OPENCART_URL
+                    def browser = params.BROWSER
+                    def threads = params.THREADS
+                    
+                    sh """
+                    pytest --alluredir=${env.ALLURE_RESULTS} \
+                           --executor=${executor} \
+                           --base_opencart_url=${base_opencart_url} \
+                           --browser=${browser} \
+                           -n threads
+                    """
+                }
+            }
+        }
+    }
+    post {
+        always {
+            script {
+
+                def allureHome = tool name: 'Allure Commandline'
+                allureHome.with {
+                    sh "${tool('Allure Commandline')}/bin/allure generate ${env.ALLURE_RESULTS} -o allure-report --clean"
+                }
+            }
+        }
+    }
+}
