@@ -1,1 +1,0 @@
-{"uuid": "0095f4ca-e6ad-4bf7-8346-9ed226361f2b", "children": ["b18372f4-b719-42be-a01f-42d5a17c7cd2"], "befores": [{"name": "Getting admin credentials from the file (fixture)", "status": "passed", "start": 1710692852754, "stop": 1710692852755}], "start": 1710692852754, "stop": 1710692858117}
