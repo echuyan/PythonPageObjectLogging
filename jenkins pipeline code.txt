@@ -4,7 +4,7 @@ pipeline {
         string(name: 'EXECUTOR')
         string(name: 'BASE_OPENCART_URL')
         string(name: 'BROWSER')
-        number(name: 'THREADS', defaultValue: 1
+        number(name: 'THREADS', defaultValue: 1)
     }
     environment {
         ALLURE_RESULTS = 'allure-results'
