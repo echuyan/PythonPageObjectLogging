@@ -31,14 +31,12 @@ pipeline {
                     def executor = params.EXECUTOR
                     def base_opencart_url = params.BASE_OPENCART_URL
                     def browser = params.BROWSER
-                    def threads = params.THREADS
-                    
+                                        
                     sh """
                     pytest --alluredir=${env.ALLURE_RESULTS} \
                            --executor=${executor} \
                            --base_opencart_url=${base_opencart_url} \
                            --browser=${browser} \
-                           -n threads
                     """
                 }
             }
